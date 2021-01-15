@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,700;1,800&family=Unna:wght@700&display=swap');
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .logo{
+    width: 70px;
+}
+header .icon-menu {
+    width: 30px;
+    margin: auto;
+}
+.burger-icon {
+    font-size: 3rem;
+}
+header h1 {
+    font-family: 'Nunito', sans-serif;
+}
+p {
+    font-family:  'Nunito', sans-serif;
+    font-style: unset;
+    font-weight: bold;
+}
+@media (min-width: 510px) {
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+header .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 3px;
+}
+header .menu a:hover {
+    font-weight: bold;
+}
+}
+header .menu {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+/* Controls */
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+header .banner {
+    background-image: url(../img/man.jpg);
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    margin: 20px;
+}
+header .stend {
+    border-style: solid;
+    margin: 100px;
+    border-color: rgb(211, 194, 178);
+    background-color:rgb(211, 194, 178);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header .svg {
+    width: 100px;
+}
+@media (min-width: 310px) {
+header .about-us {
+    margin: 50px;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media (min-width: 900px) {
+    header .about-us {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+main .small-image {
+    width: 200px;
+    height: 200px;
+}
+main .product-purse {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+main .large-photo {
+    width: 400px;
+    height: 550px;
+}
+main .block-information {
+    background-color: rgb(172, 226, 226);
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+main h3 {
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    color: teal;
+    font-size: 2rem;
+    text-align: center;
+}
+main h6 {
+    font-family: cursive;
+    color:black;
+    font-size: 2rem;
+    text-align: center;
+
+}
+main p {
+    
+    font-family: serif;
+}
+footer form label {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer {
+    margin: 50px;
+}
+footer .karta {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+footer .infa-contact {
+    border-style: solid;
+    margin: 100px;
+    border-color: white
+
+}
