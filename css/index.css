@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,700;1,800&family=Unna:wght@700&display=swap');
-body {
-    max-width: 980px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+   max-width: 900px;
     margin: auto;
 }
+
 
 header .logo{
     width: 70px;
@@ -15,6 +19,7 @@ header .icon-menu {
 .burger-icon {
     font-size: 3rem;
 }
+
 header h1 {
     font-family: 'Nunito', sans-serif;
 }
@@ -39,7 +44,6 @@ header .menu a {
 }
 header .menu a:hover {
     font-weight: bold;
-}
 }
 header .menu {
     padding: 3px;
@@ -83,8 +87,8 @@ header .banner {
 header .stend {
     border-style: solid;
     margin: 100px;
-    border-color: rgb(211, 194, 178);
-    background-color:rgb(211, 194, 178);
+    border-color: rgb(238, 220, 203);
+    background-color:rgb(253, 242, 231);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,27 +114,37 @@ main .small-image {
     width: 200px;
     height: 200px;
 }
+@media (min-width: 310px) {
 main .product-purse {
     margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+@media (min-width: 900px) {
+    main .product-purse {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 main .large-photo {
     width: 400px;
-    height: 550px;
+    height: 420px;
+}
+main .large-photos {
+width: 300px;
+height: 420px;
 }
 main .block-information {
-    background-color: rgb(172, 226, 226);
+    margin: 30px;
     display: grid;
-    padding: 30px;
+    
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
 }
 main h3 {
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
     text-transform: uppercase;
-    color: teal;
     font-size: 2rem;
     text-align: center;
 }
@@ -161,6 +175,72 @@ footer .karta {
 footer .infa-contact {
     border-style: solid;
     margin: 100px;
-    border-color: white
+    border-color: white;
 
 }
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color:  #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
