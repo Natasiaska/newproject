@@ -4,22 +4,16 @@
 :root {
   --success-color: #2ecc71;
   --error-color: #e74c3c;
-   max-width: 900px;
-    margin: auto;
+   
 }
-
+body {
+max-width: 600px;
+margin: auto;
+}
 
 header .logo{
     width: 70px;
 }
-header .icon-menu {
-    width: 30px;
-    margin: auto;
-}
-.burger-icon {
-    font-size: 3rem;
-}
-
 header h1 {
     font-family: 'Nunito', sans-serif;
 }
@@ -28,28 +22,7 @@ p {
     font-style: unset;
     font-weight: bold;
 }
-@media (min-width: 510px) {
-header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
-}
-header .menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    padding: 3px;
-}
-header .menu a:hover {
-    font-weight: bold;
-}
-header .menu {
-    padding: 3px;
-    display: flex;
-    align-items: center;
-}
+
 /* Controls */
 
 .button {
@@ -79,7 +52,7 @@ header .menu {
     color: white;
 }
 header .banner {
-    background-image: url(../img/man.jpg);
+    background-image: url(../img/man.jfif);
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     margin: 20px;
@@ -94,22 +67,21 @@ header .stend {
     justify-content: center;
     flex-direction: column;
 }
-header .svg {
+ .svg {
     width: 100px;
 }
 @media (min-width: 310px) {
-header .about-us {
+ .about-us {
     margin: 50px;
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: 1fr 1fr;
 }
 }
-@media (min-width: 900px) {
-    header .about-us {
+@media (min-width: 800px) {
+     .about-us {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}
 main .small-image {
     width: 200px;
     height: 200px;
@@ -131,14 +103,10 @@ main .large-photo {
     width: 400px;
     height: 420px;
 }
-main .large-photos {
-width: 300px;
-height: 420px;
-}
+
 main .block-information {
     margin: 30px;
     display: grid;
-    
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
 }
