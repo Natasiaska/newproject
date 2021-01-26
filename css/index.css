@@ -4,7 +4,6 @@
 :root {
   --success-color: #2ecc71;
   --error-color: #e74c3c;
-   
 }
 body {
 max-width: 600px;
@@ -16,8 +15,10 @@ header .logo{
 }
 header h1 {
     font-family: 'Nunito', sans-serif;
+    color: rgb(219, 211, 179);
 }
-p {
+header p {
+    color: cornsilk;
     font-family:  'Nunito', sans-serif;
     font-style: unset;
     font-weight: bold;
@@ -49,36 +50,31 @@ p {
 
 .card-button:hover {
     background-color: black;
-    color: white;
-}
+    color: black;
+    }
 header .banner {
-    background-image: url(../img/man.jfif);
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    margin: 20px;
+    background-image: url(../img/fonfoto.jpg);
+    display: flex;
+    flex-direction: column;
+    
 }
 header .stend {
-    border-style: solid;
     margin: 100px;
-    border-color: rgb(238, 220, 203);
-    background-color:rgb(253, 242, 231);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
  .svg {
-    width: 100px;
+    width: 70px;
 }
-@media (min-width: 310px) {
+@media (min-width: 600px) {
  .about-us {
-    margin: 50px;
     display: grid;
-    grid-row-gap: 10px;
+    grid-row-gap: 100px;
     grid-template-columns: 1fr 1fr;
 }
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
      .about-us {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -86,26 +82,48 @@ main .small-image {
     width: 200px;
     height: 200px;
 }
-@media (min-width: 310px) {
-main .product-purse {
-    margin: 50px;
-    display: grid;
-    grid-row-gap: 15px;
-    grid-template-columns: 1fr 1fr;
-    
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
-@media (min-width: 900px) {
-    main .product-purse {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
 main .large-photo {
-    width: 400px;
-    height: 420px;
+    width: 300px;
+    height: 300px;
+}
+carousel-inner {
+    width: 200px;
+    height: 100px;
 }
 
 main .block-information {
-    margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;

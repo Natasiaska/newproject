@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
             <a class="nav-link" href="#information">Цікава інформація</a>
-            <a class="nav-link" href="#shop">Наш товар</a>
+            <a class="nav-link" href="#hop">Наш товар</a>
             <a class="nav-link" href="#contact">Конткти</a>
             <a class="nav-link" href="#cart.html">Корзина</a>
       </div>
@@ -30,7 +30,7 @@
                 <div class="stend">
                     <h1>Про нас</h1>
                     <p>Ми - офіційний магазин "Mister D"! Продаємо вироби безпосередньо зі складу, що знаходиться в м.Львів.Асортимент товарів постійно змінюється, але ми намагаємося оперативно підтримувати актуальність позицій. Для повної впевненості, після Вашого замовлення, наш менеджер зв'язується з Вами та  підтверджує готовність до відправлення товару, обраним Вами способом!</p>
-                    <h2>Дякуємо, що залишаєтеся нашими прихильниками!</h2>
+                    <p>Дякуємо, що залишаєтеся нашими прихильниками!</p>
                     <button class="button">shop</button>
                 </div>
             </div>
@@ -61,36 +61,66 @@
 <main>
     <h3>Наш товар до Ваших послуг</h3>
     <div id="shop" class="product-list"></div>
-    <button>Гаманці</button>
-    <button>Ремені</button>
-    <button>Взуття</button>
-        <div class="product-purse">
-            <div class="purse">
+    <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'London')">Гаманці</button>
+  <button class="tablinks" onclick="openTab(event, 'Paris')">Взуття</button>
+  <button class="tablinks" onclick="openTab(event, 'Tokyo')">Ремені</button>
+</div>
+<!-- Tab content -->
+        <div class="purse">
                 <h4 class="name">Темно-зелений гаманець</h4>
                 <img class="small-image" src="img/pursegreen.jpg" alt="purse green">
                 <button class="button card-button">Купити</button>
                     <button class=" button card-button ">Деталі</button>
-                    </div>
-                    <div class=" purse ">
                     <h4>Чорний гаманець</h4>
                     <img class=" small-image " src=" img/purseblack.jpg " alt=" purse black ">
                     <button class=" button card-button">Купити</button>
                 <button class="button card-button">Деталі</button>
-            </div>
-            <div class="purse">
                 <h4>Коричневий</h4>
                 <img class="small-image" src="img/pursebroun.jpg" alt="purse broun">
                 <button class="button card-button">Купити</button>
                     <button class=" button card-button ">Деталі</button>
-                    </div>
-                    <div class=" purse ">
                     <h4>Міні гаманець</h4>
                     <img class=" small-image " src=" img/pursemini.jpg " alt=" purse mini ">
                     <button class=" button card-button">Купити</button>
                 <button class="button card-button">Деталі</button>
             </div>
-        </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/giftone.jpg" class="d-block w-100" alt="giftone">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Безцінний подарунок для Вас та Ваших близьких</h5>
+      </div>
     </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/gifttwo.jpg" class="d-block w-100" alt="gifttwo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Безцінний подарунок для Вас та Ваших близьких</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/giftthree.jpg" class="d-block w-100" alt="giftthree">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Безцінний подарунок для Вас та Ваших близьких</h5>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
     <h3 id="information">Цікава інформація</h3>
     <div class="block-information">
         <div class="block-first">
@@ -98,7 +128,7 @@
             <h6>Як правильно доглядати за виробами зі шкіри</h6>
             <p>Уникайте плям від води.Шкіра за своєю структурою пориста, а це значить, що вона буде поглинати рідини і залишати негарні сліди. Треба якомога швидше прибирати ці розводи, адже чим вони старше, тим важче їх прибрати. Звичайно, в хімчистці їх видалять на раз-два, плюс до всього можна знайти з півсотні способів видалити ці розводи за допомогою нашатирю, рідкого мила і простий щітки з порошком. Але навіщо створювати собі проблеми, досить дотримуватися просте правило: носіть з собою ганчірку або хустку і при будь-якій зручній можливості витирайте свої куртку, сумку і рукавички насухо. </p>
             <p>Користуйтеся водостійкими спреями.Водостійкі спреї дуже корисна штука, яку багато хто недооцінює. Насправді ви набагато більше втратите, якщо проігноруєте це чудо хімічної думки. Адже ось яка справа: коли шкіра намокає, вода вивільняє масла, які пов’язують між собою волокна шкіри. В результаті цього нехитрого хімічного процесу шкіра стає менш еластичною, тріскається і всіляко псується. Знайти спрей – не проблема. Їх так багато, що вистачить зруйнувати озоновий шар декількох планет.</p>
-            <p>Підтримуйте форму.Згодом шкіряні вироби втрачають форму. Причин багато, але найпоширеніша – це спека. Тепло наших тіл і сонця буквально висушує шкіру, в результаті чого вона втрачає вологу і нормальний вигляд. Іноді її корчить так, що стає незручно носити (якщо мова йде про туфлях). Таку навіть в голодний рік є не захочеться. Щоб підтримувати форму взуття, використовуй кедрові колодки. Мало того, що вони не дають їй деформуватися, так ще й поглинають неприємний запах. Не потрібно рубати кедр, простіше купити. Продаються в багатьох пристойних взуттєвих магазинах, не кажучи вже про інтернет. З сумками все ще простіше – досить не давати їм пустувати. Згадайте ринкових продавців, які набивають її папером. Набивають якраз для цих цілей – щоб форму тримала. Якщо немає паперу, засуньте кульки, пакети – все що завгодно, лише б було м’яке. </p>
+           
         </div>
         <div class="block-two">
             <img class="large-photo" src="img/bims.jpg" alt="bims">
@@ -167,4 +197,5 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
  <script src="js/index.js"></script>
-</body></html>
+</body>
+</html>
