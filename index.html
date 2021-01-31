@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
             <a class="nav-link" href="#information">Цікава інформація</a>
-            <a class="nav-link" href="#hop">Наш товар</a>
+            <a class="nav-link" href="#shop">Наш товар</a>
             <a class="nav-link" href="#contact">Конткти</a>
             <a class="nav-link" href="#cart.html">Корзина</a>
       </div>
@@ -31,7 +31,7 @@
                     <h1>Про нас</h1>
                     <p>Ми - офіційний магазин "Mister D"! Продаємо вироби безпосередньо зі складу, що знаходиться в м.Львів.Асортимент товарів постійно змінюється, але ми намагаємося оперативно підтримувати актуальність позицій. Для повної впевненості, після Вашого замовлення, наш менеджер зв'язується з Вами та  підтверджує готовність до відправлення товару, обраним Вами способом!</p>
                     <p>Дякуємо, що залишаєтеся нашими прихильниками!</p>
-                    <button class="button">shop</button>
+                    <a href="#shop"><button class="button">Купити</button></a>
                 </div>
             </div>
 </div>
@@ -54,38 +54,127 @@
     <div class="box">
         <img class="svg" src="img/money.jpg" alt="money">
         <h3>Спосіб оплати</h3>
-        <p>Оплата можлива безпосередньо на сайті за допомогою карти Visa/Master Card та після отримання товару на відділенні Нової Пошти</p>
+        <p>Оплата можлива безпосередньо на сайті за допомогою карти Visa/Master Card</p>
     </div>
 </div>
 </header>
 <main>
     <h3>Наш товар до Ваших послуг</h3>
     <div id="shop" class="product-list"></div>
-    <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'London')">Гаманці</button>
-  <button class="tablinks" onclick="openTab(event, 'Paris')">Взуття</button>
-  <button class="tablinks" onclick="openTab(event, 'Tokyo')">Ремені</button>
-</div>
-<!-- Tab content -->
-        <div class="purse">
-                <h4 class="name">Темно-зелений гаманець</h4>
-                <img class="small-image" src="img/pursegreen.jpg" alt="purse green">
-                <button class="button card-button">Купити</button>
-                    <button class=" button card-button ">Деталі</button>
-                    <h4>Чорний гаманець</h4>
-                    <img class=" small-image " src=" img/purseblack.jpg " alt=" purse black ">
-                    <button class=" button card-button">Купити</button>
-                <button class="button card-button">Деталі</button>
-                <h4>Коричневий</h4>
-                <img class="small-image" src="img/pursebroun.jpg" alt="purse broun">
-                <button class="button card-button">Купити</button>
-                    <button class=" button card-button ">Деталі</button>
-                    <h4>Міні гаманець</h4>
-                    <img class=" small-image " src=" img/pursemini.jpg " alt=" purse mini ">
-                    <button class=" button card-button">Купити</button>
-                <button class="button card-button">Деталі</button>
+  <button class="tablinks" onclick="openTab(event, 'Purse')">Гаманці</button>
+  <button class="tablinks" onclick="openTab(event, 'Shoes')">Взуття</button>
+  <button class="tablinks" onclick="openTab(event, 'Strap')">Ремні</button>
+</div> 
+<div id="Purse" class="tabcontent">
+    <div class="product">
+            <div class="product-purse">
+                <img class="small-image" src="img/purseclutch.jpg" alt="purse clutch">
+                <p>Зелений гаманець</p>
+                <div class="buttons">
+                 <button type="button" class="btn btn-outline-secondary">Купити</button>
+                <button type="button" class="btn btn-outline-dark">Деталі</button>
+                </div>   
             </div>
+            <div class="product-purse">
+                    <img class=" small-image " src=" img/purseblack.jpg " alt=" purse black ">
+                    <p>Чорний гаманець</p>
+                    <div class="buttons">
+                   <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>           
+                   </div>
+            </div>
+            <div class="product-purse"> 
+                    <img class="small-image" src="img/pursebroun.jpg" alt="purse broun">       
+                    <p>Коричневий</p>
+                    <div class="buttons">
+                     <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>   
+                    </div>
+                </div>
+                <div class="product-purse"> 
+                    <img class=" small-image " src=" img/pursemini.jpg " alt=" purse mini ">
+                    <p>Міні гаманець</p>
+                    <div class="buttons">
+                    <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>
+                    </div>   
+                </div>
+        </div>
+    </div>
+    <div id="Shoes" class="tabcontent">
+     <div class="product">
+            <div class="product-shoes">
+                <img class="small-image" src="img/shoessport.jpg" alt="shoes">
+                
+                <div class="buttons">
+                 <button type="button" class="btn btn-outline-secondary">Купити</button>
+                <button type="button" class="btn btn-outline-dark">Деталі</button>
+                </div>   
+            </div>
+            <div class="product-shoes">
+                    <img class=" small-image " src="img/shoesclassik.jpg" alt=" shoes ">
+                    
+                    <div class="buttons">
+                   <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>           
+                   </div>
+            </div>
+            <div class="product-shoes"> 
+                    <img class="small-image" src="img/shoes.jpg" alt="shoes">       
+                    
+                    <div class="buttons">
+                     <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>   
+                    </div>
+                </div>
+                <div class="product-shoes">
+                    <img class=" small-image " src="img/shoesbroun.jpg" alt=" shoes">
+                   
+                    <div class="buttons">
+                    <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>
+                    </div>   
+                </div>
+        </div>
+    </div>
+    <div id="Strap" class="tabcontent">
+     <div class="product">
+            <div class="product-strap">
+                <img class="small-image" src="img/belsavto.jpg" alt="purse bels">
+                
+                <div class="buttons">
+                 <button type="button" class="btn btn-outline-secondary">Купити</button>
+                <button type="button" class="btn btn-outline-dark">Деталі</button>
+                </div>   
+            </div>
+            <div class="product-strap">
+                    <img class=" small-image " src="img/belsblack.jpg" alt=" bels ">
+                    
+                    <div class="buttons">
+                   <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>           
+                   </div>
+            </div>
+            <div class="product-strap">
+                    <img class="small-image" src="img/belsbroun.jpg" alt="bels">       
+                    <p>Коричневий</p>
+                    <div class="buttons">
+                     <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>   
+                    </div>
+                </div>
+                <div class="product-strap">
+                    <img class=" small-image " src="img/belsclassic.jpg" alt="bels">
+                   
+                    <div class="buttons">
+                    <button type="button" class="btn btn-outline-secondary">Купити</button>
+                   <button type="button" class="btn btn-outline-dark">Деталі</button>
+                    </div>   
+                </div>
+        </div>
+    </div>
+    </div>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
     <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
@@ -124,7 +213,7 @@
     <h3 id="information">Цікава інформація</h3>
     <div class="block-information">
         <div class="block-first">
-            <img class="large-photo" src="img/skin.jfif" alt="skin">
+            <img class="large-photo" src="img/skin.jpg" alt="skin">
             <h6>Як правильно доглядати за виробами зі шкіри</h6>
             <p>Уникайте плям від води.Шкіра за своєю структурою пориста, а це значить, що вона буде поглинати рідини і залишати негарні сліди. Треба якомога швидше прибирати ці розводи, адже чим вони старше, тим важче їх прибрати. Звичайно, в хімчистці їх видалять на раз-два, плюс до всього можна знайти з півсотні способів видалити ці розводи за допомогою нашатирю, рідкого мила і простий щітки з порошком. Але навіщо створювати собі проблеми, досить дотримуватися просте правило: носіть з собою ганчірку або хустку і при будь-якій зручній можливості витирайте свої куртку, сумку і рукавички насухо. </p>
             <p>Користуйтеся водостійкими спреями.Водостійкі спреї дуже корисна штука, яку багато хто недооцінює. Насправді ви набагато більше втратите, якщо проігноруєте це чудо хімічної думки. Адже ось яка справа: коли шкіра намокає, вода вивільняє масла, які пов’язують між собою волокна шкіри. В результаті цього нехитрого хімічного процесу шкіра стає менш еластичною, тріскається і всіляко псується. Знайти спрей – не проблема. Їх так багато, що вистачить зруйнувати озоновий шар декількох планет.</p>
@@ -142,29 +231,18 @@
         </div>
     </div>
 </div>
-</main>
-<footer>
-    <h2 id="contacts">Заповніть форму або зв'яжіться з нами за телефоном +380985854180</h2>
-    <form action="#" method="POST">
-        <label>
-            Ваше Ім'я: <input type="text" name="name" placeholder="Ім'я">
-        </label>
-        <label>
-            Ваша пошта: <input type="email" name="email" placeholder="Емейл">
-        </label>
-        <label>
-            Звернення: <textarea name="message"></textarea>
-        </label>
-        <input type="submit">
-    </form>
-    <div class="karta">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.619056576603!2d23.97285055148862!3d49.81202907929119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f1417509d1275d9!2z0KLQktCaIMKr0J_RltCy0LTQtdC90L3QuNC5wrs!5e0!3m2!1suk!2sua!4v1610492666746!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   <div class="box">
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.619056576603!2d23.97285055148862!3d49.81202907929119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f1417509d1275d9!2z0KLQktCaIMKr0J_RltCy0LTQtdC90L3QuNC5wrs!5e0!3m2!1suk!2sua!4v1610492666746!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+    </div>
         <div class="infa-contact">
-            <h7>Наша адреса:</h7>
+        <h7>Наша адреса:</h7>
             <p>Львів ТВК Південний ТЦ Максимум</p>
             <p>2-га лінія 1 пов.маг. №45</p>
         </div>
     </div>
+    </main>
+    <footer>
     <div class="container">
       <form id="form" class="form">
         <h2>Зареєструйтесь в нас на сайті</h2>

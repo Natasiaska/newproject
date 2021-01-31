@@ -9,16 +9,18 @@ body {
 max-width: 600px;
 margin: auto;
 }
-
+.menu {
+    color: white;
+}
 header .logo{
     width: 70px;
 }
 header h1 {
     font-family: 'Nunito', sans-serif;
-    color: rgb(219, 211, 179);
+    color: white;
 }
 header p {
-    color: cornsilk;
+    color: white;
     font-family:  'Nunito', sans-serif;
     font-style: unset;
     font-weight: bold;
@@ -54,6 +56,7 @@ header p {
     }
 header .banner {
     background-image: url(../img/fonfoto.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     
@@ -67,28 +70,75 @@ header .stend {
  .svg {
     width: 70px;
 }
-@media (min-width: 600px) {
+.box {
+    padding: 10px;
+    margin: 10px;
+}
+.box h3 {
+    font-style: unset;
+    font-size: 0.8rem;
+    padding: 15px;
+    align-items: center;
+}
+.box p {
+    font-size: 0.70rem
+
+}
  .about-us {
     display: grid;
-    grid-row-gap: 100px;
+    grid-row-gap: 10px;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
 }
-}
-@media (min-width: 900px) {
+@media (min-width: 700px) {
      .about-us {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 main .small-image {
-    width: 200px;
-    height: 200px;
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+@media (min-width: 600px) {
+.product {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media (min-width: 1500px) {
+    .product{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+.product-purse {
+    margin: 30px;
+    display: grid;
+    justify-items: center;
+}
+.product-shoes {
+    margin: 30px;
+    display: grid;
+    justify-items: center;
+}
+.product-strap {
+    margin: 30px;
+    display: grid;
+    justify-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    font-size: 0.5rem;
 }
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px soli: #ccc;
     background-color: #f1f1f1;
 }
-
 .tab button {
     background-color: inherit;
     float: left;
@@ -115,8 +165,8 @@ main .small-image {
 }
 
 main .large-photo {
-    width: 300px;
-    height: 300px;
+    display: block;
+    width: 100%;
 }
 carousel-inner {
     width: 200px;
@@ -151,22 +201,41 @@ footer form label {
     grid-template-columns: 1fr 1fr 1fr;
 }
 footer {
-    margin: 50px;
+    display: block;
 }
-footer .karta {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-footer .infa-contact {
-    border-style: solid;
-    margin: 100px;
-    border-color: white;
+footer .map {
+    min-width: 400px;
+    padding: 5px;
+    display: block;
+    width: 100%;
 
 }
+
+footer .infa-contact {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    right: 0;
+    margin: 135px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px 0.5px rgb(151, 151, 151);
+    color: grey;
+
+}
+
+
 h2 {
   text-align: center;
   margin: 0 0 20px;
+}
+
+.form  {
+    max-width: 500px;
 }
 
 .form {
@@ -230,3 +299,4 @@ h2 {
   padding: 10px;
   margin-top: 20px;
   width: 100%;
+}
